@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h3>여기는 핑입니다.</h3>
+<!-- 앞에 슬래쉬는 127.0.0.1로 가서 즉 너의 서버로 가서라는 의미 뒤에 슬래쉬는 권장사항 -->
+<form action="/pong/">
+    <input type="text" name="name">
+    <input type="number" name="age">
+    <input type="submit">
+</form>
+{% endblock %}

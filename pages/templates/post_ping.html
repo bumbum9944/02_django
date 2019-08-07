@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>포스트 핑입니다.</h1>
+
+<form action="/post-pong/" method='post'>
+    {% csrf_token %}
+    <input type="text" name="username">
+    <input type="text" name="password">
+    <input type="submit" value="login">
+</form>
+{% endblock %}
